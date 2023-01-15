@@ -1,0 +1,19 @@
+.food-elements {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 50px;
+    justify-content: center;
+    font-family: 'Argos';
+    font-weight: bold;
+    justify-items: start;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Argos'
+
+}
+
+img {
+    border: 1px solid black;
+}

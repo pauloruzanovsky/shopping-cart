@@ -1,0 +1,44 @@
+.itemPage {
+    display: grid;
+    grid-template-columns: 600px auto;
+    gap: 20px;
+    padding: 20px;
+    font-family: 'Argos';
+
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.item-ingredients {
+    margin-bottom: 30px;
+}
+
+.item-price { 
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 5px;
+}
+
+button {
+    background: rgb(0, 163, 101);
+    color: white;
+    font-family: 'Argos';
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+
+}
