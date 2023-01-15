@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.c1f204c7.css",
+    "main.js": "/shopping-cart/static/js/main.b29f7153.js",
+    "static/media/salad.jpeg": "/shopping-cart/static/media/salad.ddbb5b7a03e4726eba42.jpeg",
+    "static/media/cucumber.jpeg": "/shopping-cart/static/media/cucumber.561afeaa5e494ebdc0f9.jpeg",
+    "static/media/homeimg.jpg": "/shopping-cart/static/media/homeimg.33a790694bd642cc8d65.jpg",
+    "static/media/quiche.jpeg": "/shopping-cart/static/media/quiche.c51c2f46c14b9dd0a2c4.jpeg",
+    "static/media/avocadotoast.jpeg": "/shopping-cart/static/media/avocadotoast.8b1ae469f3f4392395f6.jpeg",
+    "static/media/fritatta.jpeg": "/shopping-cart/static/media/fritatta.5206c6ca433c3ab2ef7c.jpeg",
+    "static/media/smoothie.jpeg": "/shopping-cart/static/media/smoothie.20550b52dd5bbf26e278.jpeg",
+    "static/media/github.svg": "/shopping-cart/static/media/github.4367f2d4a8cd4a31a9db9bc2387acb67.svg",
+    "static/media/trash.svg": "/shopping-cart/static/media/trash.9ae7dd506a6928e61432056acf094655.svg",
+    "index.html": "/shopping-cart/index.html",
+    "static/media/foodBag.svg": "/shopping-cart/static/media/foodBag.db957c1cbbfc0be4e5a84c3274867670.svg",
+    "main.c1f204c7.css.map": "/shopping-cart/static/css/main.c1f204c7.css.map",
+    "main.b29f7153.js.map": "/shopping-cart/static/js/main.b29f7153.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1f204c7.css",
+    "static/js/main.b29f7153.js"
+  ]
+}
