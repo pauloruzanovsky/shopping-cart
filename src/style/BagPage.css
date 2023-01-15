@@ -1,0 +1,71 @@
+.bag-page {
+    position: fixed;
+    width: 350px;
+    right: 0px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    background: white;
+    display: grid;
+    gap: 10px;
+    font-family: 'Argos';
+    z-index: 2;
+
+  }
+  
+
+.bag-item {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+
+.bag-item-1st-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bag-item-1st-row > img {
+  width: 20px;
+  height: 20px;
+  border: 0px;
+}
+
+.bag-item-name {
+  margin-bottom: 20px;
+}
+
+.bag-item-details {
+  flex-grow: 1;
+  display : flex;
+  flex-direction: column;
+  flex-wrap:nowrap;
+}
+.quantity-counter {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  gap: 5px;
+}
+
+.quantity-counter > button {
+  flex-grow: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  background: rgb(160, 204, 160);
+}
+
+.counter-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subtotal { 
+  font-size: 30px;
+}

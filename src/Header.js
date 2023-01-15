@@ -17,7 +17,6 @@ export default function Header() {
                     <li>About</li>
                 </Link>
             </ul>
-
         </header>
     )
 }

@@ -3,36 +3,63 @@ import Home from "./Home";
 import { Menu } from "./Menu";
 import About from './About'; 
 import Header from './Header';
-import ItemPage from './ItemPage';  
-import Bag from './Bag';
+import ItemPage from './ItemPage';
+import BagIcon from './BagIcon';
+import BagPage from './BagPage';
+import CheckoutPage from './CheckoutPage';
+import Footer from './Footer';
 import React from 'react'
 import { items } from './Menu'
+import './style/RouteSwitch.css'
 
 export default function RouteSwitch() {
     const [bag, setBag] = React.useState([]);
     const [bagCount, setBagCount] = React.useState(0);
-    
-    const addToBag = (e) => {
-        setBag([...bag,items[e.target.parentNode.parentNode.getAttribute('id')]])
+    const [showBag, setShowBag] = React.useState(false);
 
+    const addToBag = (e) => {
+        setShowBag(true);
+        if(!(bag.some(item => item.id === items[e.target.parentNode.parentNode.getAttribute('id')].id))) {
+           return setBag([...bag,{...items[e.target.parentNode.parentNode.getAttribute('id')],quantity:1}])
+        } 
+        return (setBag(bag.map(item => {
+            if(item.id === items[e.target.parentNode.parentNode.getAttribute('id')].id) {
+                return({...item, quantity: item.quantity+1})
+            }
+            return(item)
+        })))
+        
     }
 
+    const hideBag = () => {
+        setShowBag(prevState => !prevState)
+    }
+
+
     React.useEffect( () => {
-        setBagCount(bag.length)
-        console.log(bag)
-        console.log(bag.length)
+        let newBagCount = 0;
+        bag.forEach(item => {
+            newBagCount = newBagCount + item.quantity
+        })
+        setBagCount(newBagCount)
+      
     },[bag])
+
 
     return( 
         <BrowserRouter>
         <Header/>
-        <Bag bagCount={bagCount} />
+        <BagIcon bagCount={bagCount} hideBag={hideBag}/>
+        {showBag && <BagPage bag={bag} setBag={setBag} showBag={showBag} hideBag={hideBag}/>}
+        {showBag && <div className='cover' onClick={hideBag}></div>}
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/menu' element={<Menu/>}/>
                 <Route path='/about' element={<About/>}/>
                 <Route path='/menu/:id' element={<ItemPage addToBag={addToBag}/>}/>
+                <Route path='/checkout' element={<CheckoutPage bag={bag} setBag={setBag} showBag={showBag} hideBag={hideBag}/>}/>
             </Routes>
+        <Footer/>
         </BrowserRouter>
     )
 

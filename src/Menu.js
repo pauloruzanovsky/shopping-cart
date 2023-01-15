@@ -82,23 +82,17 @@ export let items = [
         img: smoothie,
         price: 10
     },
-    
+
 ]
 
 export function Menu() {
 
     let itemElements = items.map(item => 
-        <Link className='link' key={item.id} to={`/menu/${item.id.toString()}`}>
+        <Link style={{alignSelf:'flex-start'}}className='link' key={item.id} to={`/menu/${item.id.toString()}`}>
             <Item
                 id={item.id}
                 name={item.name}
                 img={item.img}
-                ingredients={item.ingredients}
-                proteins={item.proteins}
-                calories={item.calories}
-                carbs={item.carbs}
-                fibers={item.fibers}
-                fats={item.fats}
             />
         </Link>
     )

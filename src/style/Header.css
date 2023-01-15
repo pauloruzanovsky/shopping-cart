@@ -1,4 +1,4 @@
-header {
+header{
     display: flex;
     padding: 20px;
     border-bottom: 1px solid black;
@@ -10,6 +10,32 @@ header {
     font-family: 'Argos';
 }
 
+html {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid black;
+    background: rgb(0, 163, 101);
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Argos';
+    gap: 10px;
+}
+
+footer > a > img{
+    width: 1.5rem;
+    border: 0px;
+}
 ul {
     margin: 0px;
     border: 0px;

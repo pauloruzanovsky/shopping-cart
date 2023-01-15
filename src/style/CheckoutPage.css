@@ -1,0 +1,82 @@
+.wrapper {
+    display: grid;
+    justify-items: center;
+}
+
+.checkout-buttons {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-page > .subtotal {
+text-align:end;
+}
+
+.checkout-page > h1 {
+    border-bottom: 3px solid black;
+}
+.checkout-page {
+    font-family: 'Argos';
+    padding: 20px;
+    max-width: 600px;
+}
+
+.checkout-item {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+  }
+  
+  .checkout-item-1st-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .checkout-item-1st-row > img {
+    width: 20px;
+    height: 20px;
+    border: 0px;
+  }
+  
+  .checkout-item-name {
+    margin-bottom: 20px;
+  }
+  
+  .checkout-item-details {
+    flex-grow: 1;
+    display : flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+  }
+  .quantity-counter {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    gap: 5px;
+  }
+  
+  .quantity-counter > button {
+    flex-grow: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    background: rgb(160, 204, 160);
+  }
+  
+  .counter-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .subtotal { 
+    margin: 20px;
+    font-size: 30px;
+  }
