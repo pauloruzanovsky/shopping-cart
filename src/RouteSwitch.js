@@ -53,11 +53,11 @@ export default function RouteSwitch() {
         {showBag && <BagPage bag={bag} setBag={setBag} showBag={showBag} hideBag={hideBag}/>}
         {showBag && <div className='cover' onClick={hideBag}></div>}
             <Routes>
-                <Route path='/' element={<Home/>}/>
-                <Route path='/menu' element={<Menu/>}/>
-                <Route path='/about' element={<About/>}/>
-                <Route path='/menu/:id' element={<ItemPage addToBag={addToBag}/>}/>
-                <Route path='/checkout' element={<CheckoutPage bag={bag} setBag={setBag} showBag={showBag} hideBag={hideBag}/>}/>
+                <Route path='/shopping-cart' element={<Home/>}/>
+                <Route path='/shopping-cart/menu' element={<Menu/>}/>
+                <Route path='/shopping-cart/about' element={<About/>}/>
+                <Route path='/shopping-cart/menu/:id' element={<ItemPage addToBag={addToBag}/>}/>
+                <Route path='/shopping-cart/checkout' element={<CheckoutPage bag={bag} setBag={setBag} showBag={showBag} hideBag={hideBag}/>}/>
             </Routes>
         <Footer/>
         </BrowserRouter>

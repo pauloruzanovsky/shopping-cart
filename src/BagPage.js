@@ -72,7 +72,7 @@ export default function BagPage(props) {
             <div className='bag-page'>
                 {bagElements.length ? bagElements : 'Your bag is empty!'}
                 {bagElements.length ? <div className='subtotal'>Subtotal: ${subtotal} </div> : <div></div>}
-                <Link to='/checkout'>
+                <Link to='/shopping-cart/checkout'>
                 <button onClick={props.hideBag}>{"Checkout =>"}</button>
                 </Link>
                     <button onClick={props.hideBag}>{"<= Keep shopping"}</button>

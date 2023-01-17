@@ -7,13 +7,13 @@ export default function Header() {
         <header>
 
             <ul>
-                <Link className='link' to='/menu'>
+                <Link className='link' to='/shopping-cart/menu'>
                     <li>Menu</li>
                 </Link>
-                <Link className='link' to='/'>
+                <Link className='link' to='/shopping-cart'>
                     <div className="logo">FLAVORA</div>
                 </Link>
-                <Link className='link' to='/about'>
+                <Link className='link' to='/shopping-cart/about'>
                     <li>About</li>
                 </Link>
             </ul>

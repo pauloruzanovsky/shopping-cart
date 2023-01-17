@@ -88,7 +88,7 @@ export let items = [
 export function Menu() {
 
     let itemElements = items.map(item => 
-        <Link style={{alignSelf:'flex-start'}}className='link' key={item.id} to={`/menu/${item.id.toString()}`}>
+        <Link style={{alignSelf:'start', justifySelf: 'center', display:'flex', justifyContent:'center'}}className='link' key={item.id} to={`/shopping-cart/menu/${item.id.toString()}`}>
             <Item
                 id={item.id}
                 name={item.name}

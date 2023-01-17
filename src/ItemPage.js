@@ -8,6 +8,7 @@ export default function ItemPage(props) {
     const {id} = useParams();
 
     return(
+        <div className="wrapper">
         <div className='itemPage' >
             <img src={items[id].img} width='600px' alt='food'/>
             <div className='item-details' id={items[id].id}>
@@ -21,15 +22,12 @@ export default function ItemPage(props) {
                 <div className='item-price'>${items[id].price}</div>
                 <div className='buttons'>
                     <button onClick={props.addToBag}>Add to bag</button>
-                    <Link to="/menu">
+                    <Link to="/shopping-cart/menu">
                         <button>Back to menu</button>
                     </Link>
                 </div>
             </div>
-
-
-
-
+        </div>
         </div>
 )
 }

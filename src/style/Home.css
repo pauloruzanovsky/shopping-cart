@@ -1,0 +1,13 @@
+.home-img {
+    object-fit: cover;
+    min-height: calc(100vh - 100px);
+    max-height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:auto;
+    overflow:auto;
+}

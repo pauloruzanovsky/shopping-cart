@@ -75,7 +75,7 @@ export default function CheckoutPage(props) {
                 {bagElements.length ? bagElements : 'Your bag is empty!'}
                 {bagElements.length ? <div className='subtotal'>Subtotal: ${subtotal} </div> : <div></div>}
                 <div className='checkout-buttons'>
-                <Link to='/menu'>
+                <Link to='/shopping-cart/menu'>
                     <button className='return-button'>{"<= Keep shopping"}</button>
                 </Link>
                 <button onClick={() => {alert('Thank you for checking the app!')}} className='finish-button'>{"Make order =>"}</button>

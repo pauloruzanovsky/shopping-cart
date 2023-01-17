@@ -1,6 +1,7 @@
 .wrapper {
     display: grid;
     justify-items: center;
+    height: calc(100vh - 100px);
 }
 
 .checkout-buttons {
