@@ -12,35 +12,3 @@
     font-family: 'Argos';
 
 }
-
-.home-img {
-    width: 100%;
-}
-
-.home-menu {
-    position: absolute;
-    top: 15%;
-    left: 60%;
-    transform:translateY(-50%);
-    transform:translateX(-50%);
-    color: black;
-    font-family: 'Argos';
-    font-weight: bold;
-    font-size: 40px;
-}
-
-.home-menu2 {
-    cursor: pointer;
-    padding: 5px;
-    position: absolute;
-    top: 30%;
-    left: 55%;
-    transform:translateY(-50%);
-    transform:translateX(-50%);
-    background: rgb(0, 163, 101);
-    color: white;
-    border: 1px solid black;
-    font-family: 'Argos';
-    font-weight: bold;
-    font-size: 40px;
-}

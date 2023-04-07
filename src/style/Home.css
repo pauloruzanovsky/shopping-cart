@@ -2,6 +2,12 @@
     object-fit: cover;
     min-height: calc(100vh - 100px);
     max-height: 100%;
+    width: 100%;
+}
+
+.home-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #root {
@@ -10,4 +16,40 @@
     justify-content: center;
     height:auto;
     overflow:auto;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    gap: 50px;
+    background:rgb(177, 245, 219);
+}
+
+.home-menu {
+    color: rgb(97, 97, 97);
+    font-family: 'Argos';
+    font-size: 30px;
+}
+
+.home-menu2 {
+    cursor: pointer;
+    padding: 5px;
+    color:rgb(0, 163, 101);
+    font-family: 'Argos';
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.home-menu2:hover {
+    filter:brightness(0.75);
+    transition: 0.3s
+}
+
+a {
+    text-decoration: none;
+
 }
